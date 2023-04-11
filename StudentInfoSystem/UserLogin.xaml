@@ -1,0 +1,60 @@
+﻿<Window x:Class="StudentInfoSystem.UserLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="UserLogin" Height="450" Width="800">
+    <Grid>
+        <Label Content="Username" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="179,111,0,0" />
+        <TextBox Name="Username" HorizontalAlignment="Left" Height="23" Margin="269,114,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="120">
+            <TextBox.Text>
+                <Binding Path="Username" UpdateSourceTrigger="PropertyChanged"
+                         ValidatesOnDataErrors="True" ValidatesOnExceptions="True">
+                    <Binding.ValidationRules>
+                        <local:RequiredLengthValidationRule
+                            ErrorMessage="Username is required and must be at least 5 characters." MinLength="5" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <DockPanel>
+                        <TextBlock DockPanel.Dock="Bottom" Foreground="Red" FontSize="10"
+                                   Text="{Binding [0].ErrorContent}" />
+                        <AdornedElementPlaceholder />
+                    </DockPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="179,174,0,0" />
+        <TextBox Name="Password" HorizontalAlignment="Left" Height="23" Margin="269,177,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="120">
+            <TextBox.Text>
+                <Binding Path="Password" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True"
+                         ValidatesOnExceptions="True">
+                    <Binding.ValidationRules>
+                        <local:RequiredLengthValidationRule
+                            ErrorMessage="Password is required and must be at least 5 characters." MinLength="5" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <DockPanel>
+                        <TextBlock DockPanel.Dock="Bottom" Foreground="Red" FontSize="10"
+                                   Text="{Binding [0].ErrorContent}" />
+                        <AdornedElementPlaceholder />
+                    </DockPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="269,253,0,0" VerticalAlignment="Top"
+                Width="66"
+                Height="24" Command="{Binding LoginCommand }" CommandParameter="{Binding .}">
+        </Button>
+    </Grid>
+</Window>

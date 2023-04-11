@@ -1,0 +1,14 @@
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\UserLogin.exe
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\UserLogin.pdb
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\obj\Debug\UserLogin.csproj.AssemblyReference.cache
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\obj\Debug\UserLogin.csproj.CoreCompileInputs.cache
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\obj\Debug\UserLogin.exe
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\obj\Debug\UserLogin.pdb
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\test.txt
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\UserLogin.exe.config
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\EntityFramework.dll
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\EntityFramework.xml
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\obj\Debug\UserLogin.csproj.CopyComplete
+C:\Users\Anika\RiderProjects\UserLogin\UserLogin\obj\Debug\UserLogin.csproj.SuggestedBindingRedirects.cache

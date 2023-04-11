@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-StudentInfoSystem",
+      "appliesTo": "StudentInfoSystem/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-StudentInfoSys",
+      "appliesTo": "StudentInfoSys/",
+      "type": "launch"
+    }
+  ]
+}

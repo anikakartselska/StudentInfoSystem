@@ -1,0 +1,15 @@
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\bin\Debug\EasyMVVM.exe.config
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\bin\Debug\EasyMVVM.exe
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\bin\Debug\EasyMVVM.pdb
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\MainWindow.g.cs
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\App.g.cs
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM_MarkupCompile.cache
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM_MarkupCompile.lref
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\MainWindow.baml
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM.g.resources
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM.Properties.Resources.resources
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM.csproj.GenerateResource.cache
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM.csproj.CoreCompileInputs.cache
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM.exe
+C:\Users\Anika\RiderProjects\UserLogin\EasyMVVM\obj\Debug\EasyMVVM.pdb

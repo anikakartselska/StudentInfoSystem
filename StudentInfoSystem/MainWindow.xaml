@@ -1,0 +1,115 @@
+﻿<Window x:Class="StudentInfoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1200">
+    <Window.Resources>
+        <local:BitmapImageEncoderDecoder x:Key="byteArrayToImageSourceConverter"/>
+    </Window.Resources>
+    <Grid Margin="195,-126,3.6,-222">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <GroupBox Header="Снимка" Margin="-141,187,9.8,425">
+                <Grid Margin="0,-16,0,0" Height="167" VerticalAlignment="Top">
+                    <Image Name="Image" Source="{Binding MyStudent.Image, Converter={StaticResource byteArrayToImageSourceConverter}, Mode=TwoWay}" HorizontalAlignment="Left" Height="115" Margin="10,33,0,0" VerticalAlignment="Top"
+                           Width="101" />
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Column="2" Margin="50.4,145,13.8,468">
+            <GroupBox Header="Лични данни" Grid.RowSpan="2">
+                <Grid Height="96" RenderTransformOrigin="0.499,0.619" Tag="{Binding Path=UserGrid}">
+                    <Label Content="Име: " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"
+                           Height="27"
+                           Width="38" />
+                    <Label Content="Презиме: " HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"
+                           Height="27" Width="66" RenderTransformOrigin="-0.338,0.631" />
+                    <Label Content="Фамилия: " HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top"
+                           Height="27" Width="62" />
+                    <TextBox Name="Ime" Text="{Binding Path=MyStudent.Ime1}" HorizontalAlignment="Left"
+                             Margin="113,0,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="328" Height="27" />
+                    <TextBox Name="Prezime" Text="{Binding Path=MyStudent.Prezime1}" HorizontalAlignment="Left"
+                             Margin="113,0,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Center" Width="328" Height="28" />
+                    <TextBox Name="Familiq" Text="{Binding Path=MyStudent.Familia1}" HorizontalAlignment="Left"
+                             Margin="113,66,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="328" Height="28" />
+                    <Button Content="Find" HorizontalAlignment="Left" Margin="635,12,0,0" VerticalAlignment="Top"
+                            Width="76" Command="{Binding Button_Click_2 }" />
+                    <Button x:Name="LogOut" Content="LogOut" HorizontalAlignment="Left" Margin="494,40,0,0"
+                            VerticalAlignment="Top" Width="75" Command="{Binding LogOut_Click}" />
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="Студентска информация" Margin="0,169,25,-238.8">
+                <Grid Height="168" Margin="10,10,-1.6,15.6" Tag="{Binding Path=StudentGrid}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44*" />
+                        <ColumnDefinition Width="57*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Факултет: " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"
+                           Height="27" Width="83" />
+                    <Label Content="Специалност: " HorizontalAlignment="Left" Margin="10,32,0,0"
+                           VerticalAlignment="Top"
+                           Height="27" Width="89" />
+                    <TextBox Name="Falkutet" Text="{Binding Path=MyStudent.Faklutet1}" HorizontalAlignment="Left"
+                             Margin="115,0,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="326" Height="27" Grid.ColumnSpan="2" />
+                    <TextBox Name="Specialnost" Text="{Binding Path=MyStudent.Specialnost1}" HorizontalAlignment="Left"
+                             Margin="115,32,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="326" Height="28" Grid.ColumnSpan="2" />
+                    <TextBox Name="OKS" Text="{Binding Path=MyStudent.ObrazovatelnoKvalifikacionnaStepen1}"
+                             HorizontalAlignment="Left" Margin="115,65,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="326" Height="28" Grid.ColumnSpan="2" />
+                    <TextBox Name="FakNomer" Text="{Binding Path=MyStudent.FaklutetenNomer1}"
+                             HorizontalAlignment="Left" Margin="115,139,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="326" Height="28" Grid.ColumnSpan="2" />
+                    <Label Content="ОКС: " HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"
+                           Height="27" Width="83" />
+                    <Label Content="Статус: " HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"
+                           Height="27" Width="83" />
+                    <Label Content="Фак. номер: " HorizontalAlignment="Left" Margin="10,140,0,0"
+                           VerticalAlignment="Top"
+                           Height="27" Width="83" />
+                    <Label Content="Курс: " HorizontalAlignment="Left" Margin="226,2,0,0" VerticalAlignment="Top"
+                           Height="27" Width="38" Grid.Column="1" />
+                    <TextBox Name="Kurs" Text="{Binding Path=MyStudent.Kurs1}" HorizontalAlignment="Left"
+                             Margin="282,0,-70.8,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="74" Height="27" Grid.Column="1" />
+                    <Label Content="Поток:" HorizontalAlignment="Left" Margin="226.4,34,0,0" VerticalAlignment="Top"
+                           Height="27" Width="46" Grid.Column="1" />
+                    <TextBox Name="Potok" Text="{Binding Path=MyStudent.Potok1}" HorizontalAlignment="Left"
+                             Margin="282,32,-70.8,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="74" Height="28" Grid.Column="1" />
+                    <Label Content="Група: " HorizontalAlignment="Left" Margin="226,66,0,0" VerticalAlignment="Top"
+                           Height="27" Width="46" Grid.Column="1" />
+                    <TextBox Name="Grupa" Text="{Binding Path=MyStudent.Grupa1}" HorizontalAlignment="Left"
+                             Margin="282,65,-70.8,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="74" Height="28" Grid.Column="1" />
+                </Grid>
+            </GroupBox>
+            <Button Content="Clear" HorizontalAlignment="Left" Margin="507,108,0,0" VerticalAlignment="Top" Width="75"
+                    Command="{Binding Button_Click}" />
+            <Button Content="Activate/Disable" HorizontalAlignment="Left" Margin="494,44,0,0" VerticalAlignment="Top"
+                    Width="112" Command="{Binding Button_Click_1}" />
+            <Button Content="Create Student" HorizontalAlignment="Left" Margin="622,131,0,0" VerticalAlignment="Top"
+                    Width="96" Command="{Binding Button_Click_3}" Height="24" />
+            <ComboBox ItemsSource="{Binding Path=StudStatusChoices}"
+                      SelectedItem="{Binding Path=MyStudent.Status1}"
+                      HorizontalAlignment="Left" Margin="133,300,0,-173" VerticalAlignment="Top" Width="323"
+                      Height="28" />
+            <Button Content="Does Students Exist" HorizontalAlignment="Left" Margin="741,44,0,0"
+                    VerticalAlignment="Top" Width="112" Command="{Binding Button_Click_4}" Height="29" />
+            <Button Content="Copy Students" HorizontalAlignment="Left" Margin="643,91,0,0" VerticalAlignment="Top"
+                    Width="75" Command="{Binding Button_Click_6}" Height="24" />
+        </Grid>
+        <Button Content="+" HorizontalAlignment="Left" Margin="-142,331,0,0" VerticalAlignment="Top" Width="26" Height="22" Command="{Binding insertPicture_Click}"/>
+
+    </Grid>
+</Window>

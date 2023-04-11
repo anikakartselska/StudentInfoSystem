@@ -1,0 +1,17 @@
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\bin\Debug\WpfExample.exe.config
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\bin\Debug\WpfExample.exe
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\bin\Debug\WpfExample.pdb
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.csproj.AssemblyReference.cache
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\MainWindow.g.cs
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\App.g.cs
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample_MarkupCompile.cache
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample_MarkupCompile.lref
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\MainWindow.baml
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.g.resources
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.Properties.Resources.resources
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.csproj.GenerateResource.cache
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.csproj.CoreCompileInputs.cache
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.exe
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\WpfExample.pdb
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\NamesWindow.g.cs
+C:\Users\Anika\RiderProjects\UserLogin\WpfExample\obj\Debug\NamesWindow.baml
